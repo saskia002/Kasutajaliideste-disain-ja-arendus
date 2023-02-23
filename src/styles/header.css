@@ -1,0 +1,39 @@
+.nav-burger {
+	margin: 0;
+	padding: 0;
+}
+
+.vector-header-start {
+	display: flex;
+	align-items: center;
+}
+
+.nav-title-logo {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.nav-title {
+	display: flex;
+	flex-direction: row;
+	gap: 0.8rem;
+	justify-content: start;
+	align-items: center;
+	width: 222px;
+	height: 50px;
+	margin-left: 24px;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: #36c;
+	background: none;
+	margin: 0 8px;
+	font-size: 0.875em;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+	text-decoration: underline;
+}

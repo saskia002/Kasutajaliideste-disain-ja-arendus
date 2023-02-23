@@ -13,9 +13,9 @@
 
 .page-container-inner {
 	display: grid;
-	column-gap: 36px;
-	grid-template: min-content min-content min-content 1fr min-content / 12.25em minmax(0, 1fr);
-	grid-template-areas: "header header" "siteNotice siteNotice" "mainMenu pageContent" "toc pageContent" "footer footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "pageHeader" "pageContent" "pageFooter";
 }
 
 body {
@@ -32,11 +32,9 @@ body {
 }
 
 .content-container {
-	grid-column: mainMenu / pageContent;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	grid-column: mainMenu / pageContent;
 	margin-left: auto;
 	margin-right: auto;
 	grid-area: pageContent;
