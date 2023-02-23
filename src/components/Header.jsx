@@ -39,21 +39,20 @@ export default function Header() {
 							Search
 						</button>
 					</form>
-					<ul class="navbar-nav mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class=" active nav-links" aria-current="page" href="#">
-								Create account
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-links" aria-current="page" href="#">
-								Log in
-							</a>
-						</li>
-					</ul>
-					<button className="nav-burger button-icon" aria-current="page">
-						<MoreHorizIcon fontSize="small" />
-					</button>
+					<div className="d-inline-flex flex-row flex-nowrap align-items-center gap-1">
+						<a className="nav-links" aria-current="page" href="">
+							Log in
+						</a>
+						<a className="nav-links" aria-current="page" href="">
+							Create account
+						</a>
+
+						<div className="d-inline-block">
+							<button className="button-icon " aria-current="page">
+								<MoreHorizIcon fontSize="small" />
+							</button>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</header>
