@@ -1,0 +1,49 @@
+.page-container {
+	position: relative;
+	z-index: 0;
+	max-width: 99.75em;
+	min-width: 31.25em;
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.05px 1.5em;
+	background-color: #ffffff;
+	box-sizing: border-box;
+}
+
+.page-container-inner {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: "pageHeader" "pageContent" "pageFooter";
+}
+
+body {
+	background-color: #f8f9fa;
+	color: #202122;
+	overflow-y: scroll;
+}
+
+.main-body {
+	display: block;
+	margin-left: 0;
+	padding: 0.5em 0 1.5em;
+	direction: ltr;
+}
+
+.content-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-area: pageContent;
+}
+
+.vector-body {
+	position: relative;
+	z-index: 0;
+}
+
+.content-text {
+}
