@@ -8,6 +8,33 @@
 	-webkit-text-size-adjust: 100%;
 	font-family: sans-serif;
 	font-size: 16px;
+
+	--section-blue-header: #cedff2;
+	--section-blue-header-border: #a3b0bf;
+	--section-blue-main-bg: #f5faff;
+	--section-blue-main-border: #cedff2;
+
+	--section-green-header: #a3bfb1;
+	--section-green-header-border: #a3bfb1;
+	--section-green-main-bg: #f5fffa;
+	--section-green-main-border: #cef2e0;
+
+	--section-red-header: #f2cedd;
+	--section-red-header-border: #bfa3af;
+	--section-red-main-bg: #fff5fa;
+	--section-red-main-border: #f2cedd;
+
+	--section-lilac-header: #ddcef2;
+	--section-lilac-header-border: #afa3bf;
+	--section-lilac-main-bg: #faf5ff;
+	--section-lilac-main-border: #ddcef2;
+
+	--section-def-header: #eee;
+	--section-def-header-border: #ddd;
+	--section-def-main-bg: #fff;
+	--section-def-main-border: #e2e2e2;
+
+	--link-color: #36c;
 }
 
 #root {
