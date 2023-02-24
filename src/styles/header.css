@@ -38,3 +38,120 @@
 .nav-links:focus {
 	text-decoration: underline;
 }
+
+.search-input {
+	max-width: 37.42857143em;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	height: 32px;
+	border-radius: 1px;
+	border: 1px solid #a2a9b1;
+	font-size: calc(1em * 0.875);
+	flex-grow: 1;
+	margin-left: 24px;
+	margin-right: 12px;
+}
+
+.search-input svg {
+	color: #72777d;
+}
+
+.search-icon-wrapper {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 9px;
+}
+
+.search-text-area {
+	height: 24px;
+	border: 0;
+	box-shadow: none;
+	outline: none;
+}
+
+.search-button {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.1s, opacity 0.1s ease;
+	color: #404244;
+	font-size: 14px;
+	border: 1px solid #a2a9b1;
+	border-radius: 0 2px 2px 0;
+	background-color: #f8f9fa;
+	cursor: pointer;
+	box-sizing: border-box;
+	min-width: 32px;
+	width: 5rem;
+	padding: 0;
+	margin: 0;
+	height: 32px;
+	margin-right: -1px;
+	font-weight: 700;
+}
+
+.search-input:hover {
+	border-color: #72777d;
+}
+
+.search-text-area:focus {
+	outline: none;
+	border: 0;
+	box-shadow: none;
+}
+
+.search-input:focus-within {
+	border-color: #3366cc;
+	box-shadow: inset 0 0 0 1px #3366cc;
+}
+
+.search-input:focus-within .search-button {
+	box-shadow: -1.5px 0 0 0px #3366cc;
+}
+
+.search-input:focus-within .search-button {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search-input:hover .search-button {
+	visibility: visible;
+	opacity: 1;
+}
+
+.nav-bar-dropdown {
+	width: 200px;
+	border-radius: 1px;
+	font-size: 0.875rem;
+	border: 1px solid #a2a9b1;
+	box-shadow: 0 1px 1px 0 #0000001a;
+	transition-property: opacity;
+	transition-duration: 100ms;
+}
+
+.nav-bar-dropdown div {
+	min-height: 2rem;
+	padding: 0 12px;
+	min-height: 32px;
+}
+
+.nav-bar-dropdown-element {
+	display: flex;
+	align-items: center;
+}
+
+.nav-bar-dropdown-heading {
+	padding: 6px 14px;
+	font-size: 0.875rem;
+}
+
+.search-icon-small {
+	box-sizing: content-box !important;
+	width: 1.25em;
+	height: 1.25em;
+	min-width: 1.25em;
+	min-height: 1.25em;
+	flex-basis: 1.25em;
+}
