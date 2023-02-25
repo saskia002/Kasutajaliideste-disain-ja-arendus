@@ -2,6 +2,7 @@ import "./styles/layout.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
+import Bottom from "./components/Bottom";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<div className="page-container-inner">
 					<Header />
 					<Content />
+					<Bottom />
 					<Footer />
 				</div>
 			</div>
