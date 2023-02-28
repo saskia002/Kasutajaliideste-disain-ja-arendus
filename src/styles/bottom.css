@@ -2,6 +2,12 @@
     border-color: #e2e2e2
 }
 
+.mp-box {
+    border: 1px solid #aaa;
+    padding: 0 0.5em 0.5em;
+    margin-top: 4px;
+}
+
 .mp-h2{
     background: #eee;
     border: 1px solid #aaa;

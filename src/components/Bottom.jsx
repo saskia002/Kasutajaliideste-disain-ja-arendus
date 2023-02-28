@@ -72,7 +72,7 @@ export default function Bottom() {
                             <a href="https://www.wikidata.org/wiki/" title="Wikidata">
                                 <img alt="Wikidata logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png" decoding="async" 
                                 srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/71px-Wikidata-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/94px-Wikidata-logo.svg.png 2x" 
-                                data-file-width="1050" data-file-height="590" width="47" height="26" />
+                                data-file-width="1050" data-file-height="590" width="42" height="26" />
                             </a>
                         </div>
                         <div><span><a href="https://www.wikidata.org/wiki/" class="extiw" title="d:">Wikidata</a></span><br />Free knowledge base</div>
@@ -82,7 +82,7 @@ export default function Bottom() {
                             <a href="https://en.wikinews.org/wiki/" title="Wikinews">
                                 <img alt="Wikinews logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png" decoding="async" 
                                 srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/77px-Wikinews-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/102px-Wikinews-logo.svg.png 2x" 
-                                data-file-width="759" data-file-height="415" width="51" height="28" />
+                                data-file-width="759" data-file-height="415" width="42" height="28" />
                             </a>
                         </div>
                         <div><span><a href="https://en.wikinews.org/wiki/" class="extiw" title="n:">Wikinews</a></span><br />Free-content news</div>
