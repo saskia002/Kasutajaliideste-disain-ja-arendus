@@ -8,7 +8,7 @@ export default function Bottom() {
             <ul>
                 <li><b><a href="" title="Wikipedia:Community portal">Community portal</a></b> – The central hub for editors, with resources, links, tasks, and announcements.</li>
                 <li><b><a href="" title="Wikipedia:Village pump">Village pump</a></b> – Forum for discussions about Wikipedia itself, including policies and technical issues.</li>
-                <b><a href="" title="Wikipedia:News">Site news</a></b> – Sources of news about Wikipedia and the broader Wikimedia movement.
+                <li><b><a href="" title="Wikipedia:News">Site news</a></b> – Sources of news about Wikipedia and the broader Wikimedia movement.</li>
                 <li><b><a href="" title="Wikipedia:Teahouse">Teahouse</a></b> – Ask basic questions about using or editing Wikipedia.</li>
                 <li><b><a href="" title="Wikipedia:Help desk">Help desk</a></b> – Ask questions about using or editing Wikipedia.</li>
                 <li><b><a href="" title="Wikipedia:Reference desk">Reference desk</a></b> – Ask research questions about encyclopedic topics.</li>
