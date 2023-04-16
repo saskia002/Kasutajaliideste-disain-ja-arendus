@@ -1,105 +1,118 @@
-#mp-bottom{
-    border-color: #e2e2e2
+#mp-bottom {
+	border-color: #e2e2e2;
 }
 
 .mp-box {
-    border: 1px solid #aaa;
-    padding: 0 0.5em 0.5em;
-    margin-top: 4px;
+	border: 1px solid #aaa;
+	padding: 0 0.5em 0.5em;
+	margin-top: 4px;
 }
 
-.mp-h2{
-    background: #eee;
-    border: 1px solid #aaa;
-    border-color: #ddd;
-    margin: 0.5em;
-    padding: 0.2em 0.4em;
-    font-size: 120%;
-    font-weight: bold;
-    font-family: inherit;
+.mp-h2 {
+	background: #eee;
+	border: 1px solid #aaa;
+	border-color: #ddd;
+	margin: 0.5em;
+	padding: 0.2em 0.4em;
+	font-size: 120%;
+	font-weight: bold;
+	font-family: inherit;
 }
 
 #sister-projects-list {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #sister-projects-list li {
-    width: 33%;
-    min-width: 20em;
-    white-space: nowrap;
-    flex: 1 0 25%;
-    display: inline-block;
+	width: 33%;
+	min-width: 20em;
+	white-space: nowrap;
+	flex: 1 0 25%;
+	display: inline-block;
 }
 
 #sister-projects-list li > div:first-child {
-    min-width: 50px;
-    text-align: center;
+	min-width: 50px;
+	text-align: center;
 }
 
 #sister-projects-list li > div {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 6px 4px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 6px 4px;
 }
 
 #sister-projects-list li span {
-    font-weight: bold;
+	font-weight: bold;
 }
 
-.plainlist ul{
-    line-height: inherit;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.plainlist ul {
+	line-height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.plainlist ul li{
-    margin-bottom: 0;
+.plainlist ul li {
+	margin-bottom: 0;
 }
 
 .wikipedia-languages > ul {
-    list-style: none;
-    text-align: center;
-    clear: both;
+	list-style: none;
+	text-align: center;
+	clear: both;
 }
 
 .wikipedia-languages ul {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .wikipedia-languages-count-container {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    margin: 0 auto;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 1em;
+	margin: 0 auto;
 }
 
 .wikipedia-languages-prettybars {
-    width: 100%;
-    height: 1px;
-    margin: 0.5em 0;
-    background-color: #c8ccd1;
-    flex-shrink: 1;
-    align-self: center;
+	width: 100%;
+	height: 1px;
+	margin: 0.5em 0;
+	background-color: #c8ccd1;
+	/*flex-shrink: 1;*/
+	/*align-self: center;*/
 }
 
 .wikipedia-languages-count {
-    padding: 0 1em;
-    white-space: nowrap;
+	padding: 0 1em;
+	white-space: nowrap;
 }
-
 
 .wikipedia-languages-langs {
-    display: inline;
-
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	line-height: 1.6;
 }
 
-.hlist {
-    display: inline;
+.wikipedia-languages-langs ul li {
+	display: inline-flex;
+	margin-right: 0.2rem;
 }
 
-.inline {
-    display: inline;
+.wikipedia-languages-langs ul li::after {
+	padding-left: 0.2rem;
+	content: " · ";
+	font-weight: bold;
+}
+
+.wikipedia-languages-langs ul li:last-child::after {
+	margin-right: 0;
+	content: "";
 }
