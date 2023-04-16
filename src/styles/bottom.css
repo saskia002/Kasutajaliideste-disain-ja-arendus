@@ -116,3 +116,106 @@
 	margin-right: 0;
 	content: "";
 }
+
+.mw-portlet-lang {
+    float: right;
+}
+
+.vector-menu-dropdown {
+    position: relative;
+}
+
+.vector-dropdown > .vector-menu-heading:not(.mw-ui-icon-element) {
+    display: flex;
+  }
+
+.vector-menu-checkbox {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  :not(:checked) > .vector-menu-checkbox {
+    display: block;
+  }
+
+  .mw-ui-icon {
+    font-size: initial;
+    position: relative;
+    display: inline-block;
+    box-sizing: content-box !important;
+    width: 1.25em;
+    height: 1.25em;
+    min-width: 1.25em;
+    min-height: 1.25em;
+    flex-basis: 1.25em;
+    vertical-align: middle;
+    line-height: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mw-ui-icon:not(.mw-ui-button) {
+    border: 0;
+  }
+
+  .mw-ui-icon + span:not(:empty) {
+    margin-left: 6px;
+  }
+
+  .mw-ui-button.mw-ui-quiet:not(.mw-ui-icon-element), .mw-ui-button.mw-ui-quiet.mw-ui-progressive:not(.mw-ui-icon-element), .mw-ui-button.mw-ui-quiet.mw-ui-destructive:not(.mw-ui-icon-element) {
+    min-height: 32px;
+  }
+
+  .mw-ui-button.mw-ui-progressive.mw-ui-quiet {
+    color: #3366cc;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .vector-menu-dropdown > .vector-menu-content {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+ }
+  .vector-dropdown .vector-dropdown-content, .vector-dropdown > .vector-menu-content {
+  background-color: #ffffff;
+  border: 1px solid #a2a9b1;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  transition-property: opacity;
+  transition-duration: 100ms;
+  padding: 4px 0;
+  width: max-content;
+  max-width: 200px;
+ }
+ .vector-menu-dropdown > .vector-menu-content {
+ visibility: hidden;
+ }
+
+ .vector-menu ul {
+  list-style: none;
+  margin: 0;
+ }
+ .vector-menu-dropdown .mw-list-item {
+  padding: 0;
+  margin: 0;
+ }
