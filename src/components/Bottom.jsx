@@ -166,6 +166,24 @@ export default function Bottom() {
                             <div class="wikipedia-languages-prettybars"></div>
                             <div role="heading" class="wikipedia-languages-count">1,000,000+ articles</div>
                             <div class="wikipedia-languages-prettybars"></div>
+                            <div class="hlist wikipedia-languages-langs inline">
+                            <ul>
+                                <li><a class="external text" href="https://ar.wikipedia.org/wiki/"><span class="autonym" title="Arabic (ar:)" lang="ar">العربية</span></a></li>
+                                    <li><a class="external text" href="https://de.wikipedia.org/wiki/"><span class="autonym" title="German (de:)" lang="de">Deutsch</span></a></li>
+                                    <li><a class="external text" href="https://es.wikipedia.org/wiki/"><span class="autonym" title="Spanish (es:)" lang="es">Español</span></a></li>
+                                    <li><a class="external text" href="https://fr.wikipedia.org/wiki/"><span class="autonym" title="French (fr:)" lang="fr">Français</span></a></li>
+                                    <li><a class="external text" href="https://it.wikipedia.org/wiki/"><span class="autonym" title="Italian (it:)" lang="it">Italiano</span></a></li>
+                                    <li><a class="external text" href="https://nl.wikipedia.org/wiki/"><span class="autonym" title="Dutch (nl:)" lang="nl">Nederlands</span></a></li>
+                                    <li><a class="external text" href="https://ja.wikipedia.org/wiki/"><span class="autonym" title="Japanese (ja:)" lang="ja">日本語</span></a></li>
+                                    <li><a class="external text" href="https://pl.wikipedia.org/wiki/"><span class="autonym" title="Polish (pl:)" lang="pl">Polski</span></a></li>
+                                    <li><a class="external text" href="https://pt.wikipedia.org/wiki/"><span class="autonym" title="Portuguese (pt:)" lang="pt">Português</span></a></li>
+                                    <li><a class="external text" href="https://ru.wikipedia.org/wiki/"><span class="autonym" title="Russian (ru:)" lang="ru">Русский</span></a></li>
+                                    <li><a class="external text" href="https://sv.wikipedia.org/wiki/"><span class="autonym" title="Swedish (sv:)" lang="sv">Svenska</span></a></li>
+                                    <li><a class="external text" href="https://uk.wikipedia.org/wiki/"><span class="autonym" title="Ukrainian (uk:)" lang="uk">Українська</span></a></li>
+                                    <li><a class="external text" href="https://vi.wikipedia.org/wiki/"><span class="autonym" title="Vietnamese (vi:)" lang="vi">Tiếng Việt</span></a></li>
+                                    <li><a class="external text" href="https://zh.wikipedia.org/wiki/"><span class="autonym" title="Chinese (zh:)" lang="zh">中文</span></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>

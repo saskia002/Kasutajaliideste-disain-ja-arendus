@@ -89,3 +89,17 @@
     padding: 0 1em;
     white-space: nowrap;
 }
+
+
+.wikipedia-languages-langs {
+    display: inline;
+
+}
+
+.hlist {
+    display: inline;
+}
+
+.inline {
+    display: inline;
+}
