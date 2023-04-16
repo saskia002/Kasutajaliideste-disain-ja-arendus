@@ -27,9 +27,14 @@ export default function Header() {
 
 	document.onclick = function (event) {
 		let myBox = iconRef.current;
-		if (event.target.contains(myBox) && event.target !== myBox) {
+		if (!navSmall) {
+			if (event.target.contains(myBox) && event.target !== myBox) {
+				iconRef.current.style.display = "inherit";
+				setNavSearch(false);
+			}
+		} else {
+			setNavSearch(true);
 			iconRef.current.style.display = "inherit";
-			setNavSearch(false);
 		}
 	};
 
