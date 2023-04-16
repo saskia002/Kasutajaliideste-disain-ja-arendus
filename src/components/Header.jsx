@@ -12,7 +12,6 @@ import "../styles/header.css";
 export default function Header() {
 	const navSmall = useMediaQuery("(min-width:1000px)");
 	const navSmallest = useMediaQuery("(min-width:720px)");
-	const [burger, setBurger] = useState(false);
 	const [navSearch, setNavSearch] = useState(navSmall);
 	const searchRef = createRef();
 	const iconRef = createRef();
@@ -43,15 +42,85 @@ export default function Header() {
 			<nav className="navbar navbar-expand-lg" style={{ minHeight: "66px" }}>
 				<div className="container-fluid align-items-center">
 					<div className="vector-header-start align-items-center" ref={iconRef}>
-						<button
-							onClick={() => setBurger(!burger)}
-							className="nav-burger button-icon"
-							role="button"
-							data-bs-toggle="button"
-							aria-pressed={burger}
-						>
-							{burger ? <KeyboardDoubleArrowLeftIcon fontSize="small" className="icons" /> : <MenuIcon className="icons" fontSize="small" />}
-						</button>
+						<div className="btn-group">
+							<button
+								onClick={() => setBurger(!burger)}
+								className="nav-burger button-icon"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<MenuIcon className="icons" fontSize="small" />
+							</button>
+
+							<ul className="dropdown-menu dropdown-menu-start nav-bar-side-menu">
+								<div className="nav-bar-dropdown-heading nav-bar-dropdown-element nav-bar-side-menu-header-label">Main menu</div>
+								<hr style={{ margin: "0" }} />
+
+								<div className="nav-bar-dropdown-element" style={{ marginTop: "0.2rem" }}>
+									<a href="" title="Visit the main page [Alt+Shift+z]" accesskey="z">
+										<span>Main page</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Guides to browsing Wikipedia">
+										<span>Contents</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Articles related to current events">
+										<span>Current events</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Visit a randomly selected article [Alt+Shift+x]" accesskey="x">
+										<span>Random article</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Learn about Wikipedia and how it works">
+										<span>About Wikipedia</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="How to contact Wikipedia">
+										<span>Contact us</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Support us by donating to the Wikimedia Foundation">
+										<span>Donate</span>
+									</a>
+								</div>
+								<hr style={{ margin: "2px 0px" }} />
+								<div className="nav-bar-dropdown-heading nav-bar-dropdown-element nav-bar-side-menu-header-label-2">Contribute</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Guidance on how to use and edit Wikipedia">
+										<span>Help</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Learn how to edit Wikipedia">
+										<span>Learn to edit</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="The hub for editors">
+										<span>Community portal</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="A list of recent changes to Wikipedia [Alt+Shift+r]" accesskey="r">
+										<span>Recent changes</span>
+									</a>
+								</div>
+								<div className="nav-bar-dropdown-element">
+									<a href="" title="Add images or other media for use on Wikipedia">
+										<span>Upload file</span>
+									</a>
+								</div>
+							</ul>
+						</div>
 
 						<a href="/">
 							<div className="nav-title">
@@ -107,7 +176,7 @@ export default function Header() {
 
 							<div className="d-inline-block">
 								<div className="btn-group">
-									<button className="button-icon " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<button className="button-icon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<MoreHorizIcon fontSize="small" />
 									</button>
 									<ul className="dropdown-menu dropdown-menu-end nav-bar-dropdown">
