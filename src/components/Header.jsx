@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginIcon from "@mui/icons-material/Login";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState, createRef } from "react";
+import { useState, createRef, useEffect } from "react";
 import { ButtonBase } from "@mui/material";
 import "../styles/header.css";
 
@@ -13,17 +13,36 @@ export default function Header() {
 	const navSmall = useMediaQuery("(min-width:1000px)");
 	const navSmallest = useMediaQuery("(min-width:720px)");
 	const [burger, setBurger] = useState(false);
+	const [navSearch, setNavSearch] = useState(navSmall);
 	const searchRef = createRef();
+	const iconRef = createRef();
 
 	const handleSearchFocus = () => {
 		searchRef.current.focus();
 	};
 
+	const handleSearchClick = () => {
+		setNavSearch(true);
+		iconRef.current.style.display = "none";
+	};
+
+	document.onclick = function (event) {
+		let myBox = iconRef.current;
+		if (event.target.contains(myBox) && event.target !== myBox) {
+			iconRef.current.style.display = "inherit";
+			setNavSearch(false);
+		}
+	};
+
+	useEffect(() => {
+		setNavSearch(navSmall);
+	}, [navSmall]);
+
 	return (
 		<header>
-			<nav className="navbar navbar-expand-lg">
+			<nav className="navbar navbar-expand-lg" style={{ minHeight: "66px" }}>
 				<div className="container-fluid align-items-center">
-					<div className="vector-header-start align-items-center">
+					<div className="vector-header-start align-items-center" ref={iconRef}>
 						<button
 							onClick={() => setBurger(!burger)}
 							className="nav-burger button-icon"
@@ -46,7 +65,7 @@ export default function Header() {
 					</div>
 
 					<div className="d-flex flex-grow-1 justify-content-end align-items-center">
-						{navSmall ? (
+						{navSearch ? (
 							<form className="search-input" onClick={handleSearchFocus} noValidate autoComplete="none">
 								<div className="search-icon-wrapper">
 									<SearchIcon className="search-icon" />
@@ -66,10 +85,10 @@ export default function Header() {
 						)}
 
 						<div className="d-inline-flex flex-row flex-nowrap align-items-center" style={{ gap: "0.2rem" }}>
-							{navSmall ? (
+							{navSearch ? (
 								<></>
 							) : (
-								<ButtonBase className="button-icon">
+								<ButtonBase className="button-icon" onClick={handleSearchClick}>
 									<SearchIcon className="search-icon" />
 								</ButtonBase>
 							)}
@@ -87,20 +106,20 @@ export default function Header() {
 							)}
 
 							<div className="d-inline-block">
-								<div class="btn-group">
+								<div className="btn-group">
 									<button className="button-icon " role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										<MoreHorizIcon fontSize="small" />
 									</button>
-									<ul class="dropdown-menu dropdown-menu-end nav-bar-dropdown">
+									<ul className="dropdown-menu dropdown-menu-end nav-bar-dropdown">
 										{!navSmallest ? (
 											<>
-												<div class="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
+												<div className="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
 													<a href="" title="You are encouraged to create an account and log in; however, it is not mandatory">
 														<PersonAddAlt1Icon fontSize="small" className="icons" />
 														&nbsp;Create account
 													</a>
 												</div>
-												<div class="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
+												<div className="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
 													<a href="" title="You're encouraged to log in; however, it's not mandatory. [Alt+Shift+o]">
 														<LoginIcon fontSize="small" className="icons" />
 														&nbsp;Log in
@@ -112,7 +131,7 @@ export default function Header() {
 											<></>
 										)}
 
-										<div class="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
+										<div className="nav-bar-dropdown-heading nav-bar-dropdown-elemen">
 											Pages for logged out editors
 											<a href="" aria-label="Learn more about editing">
 												{" "}
