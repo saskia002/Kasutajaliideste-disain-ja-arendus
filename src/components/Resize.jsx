@@ -12,13 +12,13 @@ export default function Resize() {
 		if (!isFullscreen) {
 			document.querySelector(".page-container").style.minWidth = "100%";
 		} else {
-			document.querySelector(".page-container").style.minWidth = "99.75em";
+			document.querySelector(".page-container").style.minWidth = "inherit";
 		}
 	};
 
 	return (
 		<>
-			<style jsx>
+			<style>
 				{`
 					.resize-button {
 						position: fixed;

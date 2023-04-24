@@ -63,7 +63,7 @@ export default function Header() {
 								<hr style={{ margin: "0" }} />
 
 								<div className="nav-bar-dropdown-element" style={{ marginTop: "0.2rem" }}>
-									<a href="" title="Visit the main page [Alt+Shift+z]" accesskey="z">
+									<a href="" title="Visit the main page [Alt+Shift+z]">
 										<span>Main page</span>
 									</a>
 								</div>
@@ -78,7 +78,7 @@ export default function Header() {
 									</a>
 								</div>
 								<div className="nav-bar-dropdown-element">
-									<a href="" title="Visit a randomly selected article [Alt+Shift+x]" accesskey="x">
+									<a href="" title="Visit a randomly selected article [Alt+Shift+x]">
 										<span>Random article</span>
 									</a>
 								</div>
@@ -115,7 +115,7 @@ export default function Header() {
 									</a>
 								</div>
 								<div className="nav-bar-dropdown-element">
-									<a href="" title="A list of recent changes to Wikipedia [Alt+Shift+r]" accesskey="r">
+									<a href="" title="A list of recent changes to Wikipedia [Alt+Shift+r]">
 										<span>Recent changes</span>
 									</a>
 								</div>
