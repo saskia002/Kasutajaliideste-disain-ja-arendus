@@ -1,5 +1,78 @@
 @import url(bottom.css);
 
+.mw-body .vector-page-toolbar {
+	grid-area: toolbar;
+}
+
+.vector-page-toolbar-container {
+	display: flex;
+	font-size: 0.8125em;
+	box-shadow: 0 1px #c8ccd1;
+	margin-bottom: 1px;
+}
+
+.vector-page-toolbar-container .mw-portlet-views:not(.emptyPortlet) {
+	display: block;
+}
+
+#left-navigation {
+	display: flex;
+	margin-left: -8px;
+	flex-grow: 1;
+}
+
+#right-navigation {
+	display: flex;
+	margin-right: -8px;
+}
+
+#right-navigation .vector-menu-content {
+	left: auto;
+	right: -1px;
+}
+
+.vector-menu-tabs {
+	float: left;
+}
+
+.vector-menu-tabs .mw-list-item {
+	float: left;
+	white-space: nowrap;
+}
+
+.vector-menu-tabs .mw-list-item > a {
+	display: inline-flex;
+	position: relative;
+	cursor: pointer;
+	max-height: 3.15384615em;
+	box-sizing: border-box;
+	font-weight: normal;
+}
+
+.vector-menu-tabs .mw-list-item.vector-tab-noicon {
+	margin: 0 8px;
+}
+
+.vector-menu-tabs .mw-list-item.selected a,
+.vector-menu-tabs .mw-list-item.selected a:visited {
+	color: #202122;
+	border-bottom: 1px solid;
+}
+
+.vector-menu-tabs .mw-list-item.vector-tab-noicon > a {
+	padding: 12px 0 7px 0;
+	margin-bottom: -1px;
+}
+
+.vector-menu ul {
+	list-style: none;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
 .title-box {
 	border: 1px solid #ddd;
 	background: #f9f9f9;
@@ -10,7 +83,6 @@
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 0.8rem;
-	margin-top: 2rem;
 }
 
 .title-box-h1 {

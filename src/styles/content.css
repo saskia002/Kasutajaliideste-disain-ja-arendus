@@ -1,89 +1,43 @@
 @import url(bottom.css);
 
-
-.mw-body .vector-page-toolbar {
-    grid-area: toolbar;
-
-}
-
-.vector-page-toolbar-container {
-    display: flex;
-    font-size: 0.8125em;
-    box-shadow: 0 1px #c8ccd1;
-    margin-bottom: 1px;
-}
-
-.vector-page-toolbar-container .mw-portlet-views:not(.emptyPortlet) {
-    display: block;
-}
-
-#left-navigation {
-    display: flex;
-    margin-left: -8px;
-    flex-grow: 1;
-}
-
-#right-navigation {
-    display: flex;
-    margin-right: -8px;
-}
-
-#right-navigation .vector-menu-content {
-    left: auto;
-    right: -1px;
-}
-
-.vector-menu-tabs {
-    float: left;
-}
-
-.vector-menu-tabs .mw-list-item {
-    float: left;
-    white-space: nowrap;
-}
-
-.vector-menu-tabs .mw-list-item > a {
-    display: inline-flex;
-    position: relative;
-    cursor: pointer;
-    max-height: 3.15384615em;
-    box-sizing: border-box;
-    font-weight: normal;
-}
-
-.vector-menu-tabs .mw-list-item.vector-tab-noicon {
-    margin: 0 8px;
-}
-
-.vector-menu-tabs .mw-list-item.selected a, .vector-menu-tabs .mw-list-item.selected a:visited {
-  color: #202122;
-  border-bottom: 1px solid;
-}
-
-.vector-menu-tabs .mw-list-item.vector-tab-noicon > a {
-    padding: 12px 0 7px 0;
-    margin-bottom: 1px;
-}
-
-.vector-menu ul{
-    list-style: none;
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-}
-
 .normak-header {
 	background: #cef2e0 !important;
 	border-color: #a3bfb1 !important;
 }
 
-.normak-body {
+.villem-header {
+	background: #cedff2 !important;
+	border-color: #a3b0bf !important;
+}
+
+.ratas-header {
+	background: #ddcef2 !important;
+	border-color: #afa3bf !important;
+}
+
+.normak-body,
+.villem-body,
+.ratas-body {
+	display: flex;
+	flex-direction: column;
 	background: #f5fffa;
-	border-color: #cef2e0;
-	height: 100%;
-	width: 50%;
+	border-color: #cef2e0 !important;
+	width: 49%;
+	align-self: stretch;
+	flex-grow: 1;
+	flex-basis: 500px;
+	position: relative;
+}
+
+.ratas-body {
+	background: #faf5ff;
+	border-color: #ddcef2 !important;
+	width: 100%;
+}
+
+.villem-body {
+	background: #f5faff;
+	border-color: #cedff2 !important;
 }
 
 figcaption {
@@ -91,7 +45,7 @@ figcaption {
 	white-space: pre-line;
 }
 
-.normak-body figure {
+figure {
 	float: left;
 	width: min-content;
 	margin: 0.5em 0.9em 0.4em 0em;
@@ -101,9 +55,23 @@ figcaption {
 	line-height: 1.6;
 }
 
-.normak-body p {
+.normak-body p,
+.villem-body p,
+.ratas-body p {
 	direction: ltr;
 	font-size: 0.95rem;
 	line-height: 1.6;
 	margin: 0.25rem 0;
+}
+
+.villem-ja-normak-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 0.25rem;
+	flex-wrap: wrap;
+}
+
+.rata-fännid {
+	width: 695px;
 }
