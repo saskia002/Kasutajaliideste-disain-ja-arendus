@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Bottom from "./components/Bottom";
+import Resize from "./components/Resize";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Footer />
 				</div>
 			</div>
+			<Resize />
 		</>
 	);
 }
