@@ -45,12 +45,24 @@ export default function Footer() {
 				<ul id="footer-icons">
 					<li id="footer-coprightico">
 						<a href="https://wikimediafoundation.org/">
-							<img src="/resources/wikimedia-button.png" alt="Wikimedia Foundation" loading="lazy" width="88" height="31" />
+							<img
+								src="/Kasutajaliideste-disain-ja-arendus/resources/wikimedia-button.png"
+								alt="Wikimedia Foundation"
+								loading="lazy"
+								width="88"
+								height="31"
+							/>
 						</a>
 					</li>
 					<li id="footer-poweredbyico">
 						<a href="https://www.mediawiki.org/">
-							<img src="/resources/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" loading="lazy" width="88" height="31" />
+							<img
+								src="/Kasutajaliideste-disain-ja-arendus/resources/poweredby_mediawiki_88x31.png"
+								alt="Powered by MediaWiki"
+								loading="lazy"
+								width="88"
+								height="31"
+							/>
 						</a>
 					</li>
 				</ul>
