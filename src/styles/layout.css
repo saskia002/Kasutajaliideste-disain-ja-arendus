@@ -27,7 +27,7 @@ body {
 .main-body {
 	display: block;
 	margin-left: 0;
-	padding: 0.5em 0 1.5em;
+	/*padding: 0.5em 0 1.5em;*/
 	direction: ltr;
 }
 

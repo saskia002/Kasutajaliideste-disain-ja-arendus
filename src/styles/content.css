@@ -1,0 +1,16 @@
+@import url(bottom.css);
+
+.normak-header {
+	background: #cef2e0 !important;
+	border-color: #a3bfb1 !important;
+}
+
+.normak-body {
+	background: #f5fffa;
+	border-color: #cef2e0;
+}
+
+figcaption {
+	font-size: 0.8rem;
+	white-space: break-lines;
+}
