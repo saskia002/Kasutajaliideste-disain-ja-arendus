@@ -8,9 +8,28 @@
 .normak-body {
 	background: #f5fffa;
 	border-color: #cef2e0;
+	height: 100%;
+	width: 50%;
 }
 
 figcaption {
-	font-size: 0.8rem;
-	white-space: break-lines;
+	font-size: 12.4px;
+	white-space: pre-line;
+}
+
+.normak-body figure {
+	float: left;
+	width: min-content;
+	margin: 0.5em 0.9em 0.4em 0em;
+	font-size: calc(1em * 0.875);
+	display: block;
+	direction: ltr;
+	line-height: 1.6;
+}
+
+.normak-body p {
+	direction: ltr;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	margin: 0.25rem 0;
 }
