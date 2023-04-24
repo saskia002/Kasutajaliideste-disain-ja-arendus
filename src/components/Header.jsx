@@ -129,10 +129,10 @@ export default function Header() {
 
 						<a href="/">
 							<div className="nav-title">
-								<img src="/resources/wikipedia-globe.png" alt="" height="50" width="50" />
+								<img src="/Kasutajaliideste-disain-ja-arendus/resources/wikipedia-globe.png" alt="" height="50" width="50" />
 								<div className="nav-title-logo">
-									<img src="/resources/wikipedia-wordmark-en.svg" alt="" width="120" height="18" />
-									<img src="/resources/wikipedia-tagline-en.svg" alt="" width="117" height="13" />
+									<img src="Kasutajaliideste-disain-ja-arendus/resources/wikipedia-wordmark-en.svg" alt="" width="120" height="18" />
+									<img src="/Kasutajaliideste-disain-ja-arendus/resources/wikipedia-tagline-en.svg" alt="" width="117" height="13" />
 								</div>
 							</div>
 						</a>
