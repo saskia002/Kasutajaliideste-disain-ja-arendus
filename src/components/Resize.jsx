@@ -9,7 +9,7 @@ export default function Resize() {
 	const handleFullscreen = (e) => {
 		e.preventDefault();
 		setIsFullscreen(!isFullscreen);
-		if (isFullscreen) {
+		if (!isFullscreen) {
 			document.querySelector(".page-container").style.minWidth = "100%";
 		} else {
 			document.querySelector(".page-container").style.minWidth = "99.75em";
