@@ -15,7 +15,7 @@ export default function Content() {
 							<div id="mp-other-content">
 								<div class="img-wrap">
 									<figure>
-										<img src="/src/resources/media/petja_bling_bling.png" alt="" width="150" />
+										<img src="/resources/media/petja_bling_bling.png" alt="" width="150" />
 										<figcaption>Peeter Normak TLÜ hoones, TLÜ, 2020</figcaption>
 									</figure>
 								</div>
@@ -45,7 +45,7 @@ export default function Content() {
 							</h2>
 							<div id="mp-other-content">
 								<figure>
-									<img src="/src/resources/media/Villem_Nano.jpg" alt="" width="150" />
+									<img src="/resources/media/Villem_Nano.jpg" alt="" width="150" />
 									<figcaption>Villem Nano</figcaption>
 								</figure>
 								<p>
@@ -80,7 +80,7 @@ export default function Content() {
 							</h2>
 							<div id="mp-other-content">
 								<figure>
-									<img src="/src/resources/media/Kalle_ja Andrus_ratastel.jpg" alt="" className="rata-fännid" />
+									<img src="/resources/media/Kalle_ja Andrus_ratastel.jpg" alt="" className="rata-fännid" />
 									<figcaption>Andrus Rinde ja Kalle Kivi, TLÜ, 2021</figcaption>
 								</figure>
 								<p>
