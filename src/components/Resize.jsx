@@ -1,6 +1,5 @@
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
-import "../styles/resize.css";
 
 import { useState } from "react";
 
@@ -22,7 +21,7 @@ export default function Resize() {
 			<style jsx>
 				{`
 					.resize-button {
-						position: absolute;
+						position: fixed;
 						bottom: 8px;
 						right: 8px;
 						outline: 1px solid #72777d;
