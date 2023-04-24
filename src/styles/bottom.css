@@ -214,11 +214,15 @@
 	visibility: hidden;
 }
 
-.vector-menu ul {
-	list-style: none;
-	margin: 0;
-}
-.vector-menu-dropdown .mw-list-item {
-	padding: 0;
-	margin: 0;
-}
+ .vector-menu ul {
+  list-style: none;
+  margin: 0;
+ }
+ .vector-menu-dropdown .mw-list-item {
+  padding: 0;
+  margin: 0;
+ }
+
+ ul {
+  list-style-position: inside;
+ }
