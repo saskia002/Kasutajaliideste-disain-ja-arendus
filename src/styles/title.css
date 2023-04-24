@@ -1,0 +1,26 @@
+@import url(bottom.css);
+
+.title-box {
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	padding: 0 0.5em 0.5em;
+	margin-top: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 0.8rem;
+}
+
+.title-box-h1 {
+	margin-top: 0.65rem;
+	font-size: 22.68px;
+	font-weight: 600;
+	font-family: inherit;
+}
+
+.title-box-p {
+	margin: 0;
+	font-size: 13px;
+	font-family: inherit;
+}

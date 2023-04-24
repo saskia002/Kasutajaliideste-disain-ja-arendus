@@ -4,6 +4,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Bottom from "./components/Bottom";
 import Resize from "./components/Resize";
+import Title from "./components/Title";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<div className="page-container">
 				<div className="page-container-inner">
 					<Header />
+					<Title />
 					<Content />
 					<Bottom />
 					<Footer />
